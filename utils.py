@@ -17,3 +17,11 @@ def clean_tmp():
         if os.path.isdir(filepath):
             for file in os.listdir(filepath):
                 os.remove(os.path.join(filepath, file))
+
+def create_directories():
+    folders = ['input', 'output', 'tmp', 'tmp/deskewedimages', 'tmp/images', 'tmp/ocrcompletedpdfs', 'tmp/slicedimages']
+
+    for folder in folders:
+        if not os.path.exists(folder):
+            os.makedirs(folder, exist_ok=True)
+
