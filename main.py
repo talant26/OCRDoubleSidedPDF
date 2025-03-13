@@ -2,7 +2,7 @@ import os
 import argparse
 
 from recognizer import Recognizer
-from utils import clean_tmp
+from utils import clean_tmp, create_directories
 
 # Parses the arguments
 def get_parameters():
@@ -49,6 +49,9 @@ def loopThroughPDFs(pdfs):
     print('All files have been converted.')
 
 if __name__ == '__main__':
+
+    # Create missing directories
+    create_directories()
 
     # Search PDFs in the folder "input"
     pdfs = [f for f in sorted(os.listdir('input/')) if f.endswith('.pdf')]
