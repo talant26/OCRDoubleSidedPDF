@@ -7,13 +7,13 @@ from utils import clean_tmp
 def print_intro():
     print('''This script is intended for double-sided PDF scans (like scientific papers). It splits the double-sided pages into individual pages, aligns them correctly and performs text recognition for the specified languages. 
 
-    Procedure:
-    - Place the PDFs to be recognized in the “input” folder.
-    - Specify the language.
-    - The pages are normally separated in the middle. You can adjust the value as required so that the page is not split at 50, but at 55 or 60 percent.
-    - The results appear in the output folder.
-    ########################################
-    ''')
+Procedure:
+- Place the PDFs to be recognized in the “input” folder.
+- Specify the language.
+- The pages are normally separated in the middle. You can adjust the value as required so that the page is not split at 50, but at 55 or 60 percent.
+- The results appear in the output folder.
+########################################
+''')
 
 # Asks the user for input for the parameters languages and spplit
 # languages(str) = Languages for Text Recognition
