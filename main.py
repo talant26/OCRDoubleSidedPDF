@@ -32,7 +32,6 @@ def loopThroughPDFs(pdfs):
 
     output_files = set(os.listdir('output/'))
     languages, split = get_parameters()
-    print(languages)
 
     for file in pdfs:
         if file in output_files:
