@@ -1,0 +1,6 @@
+# The following python modules need to be installed
+pdf2image
+numpy
+pytesseract
+deskew
+pypdf
